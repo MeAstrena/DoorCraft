@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html ru>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DoorCraft</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <script>
+            function smoothScroll(event, targetId) {
+                event.preventDefault(); // Отменяем стандартное поведение ссылки
+                const targetElement = document.getElementById(targetId); // Находим целевой элемент
+                targetElement.scrollIntoView({
+                    behavior: 'smooth' // Устанавливаем плавный переход
+                });
+            }
+        </script>
+        <header class="header-section">
+            <section class="top-nav">
+
+                <div class="logo-top">
+                     <a href="#home" onclick="smoothScroll(event, 'home')">
+                                    <img src="./img/logo1.png" alt="">
+                     </a>
+                </div>
+
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+                </label>
+                 <ul class="menu_top">
+                    <li><a href="#about-us" onclick="smoothScroll(event, 'about-us')">О нас</a></li>
+                    <li><a href="#catalog" onclick="smoothScroll(event, 'catalog')">Каталог</a></li>
+                    <li ><a href="#service" onclick="smoothScroll(event, 'service')">Услуги</a></li>
+                    <li><a href="./basket.html">Корзина</a></li>
+                    <li><a href="#contact"  onclick="smoothScroll(event, 'contact1')">Связаться</a></li>
+                 </ul>
+
+            </section>
+            <div class="menu-item" id="home">
+                <div class="containero">
+                    <div class="row">
+
+                        <div class="logo1">
+                            <div class="logo">
+                                <a href="#home" onclick="smoothScroll(event, 'home')">
+                                    <img src="./img/logo1.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="menus">
+                            <div class="nav-menu">
+                                <nav class="mainmenu">
+
+                                    <ul>
+                                        <li class="ost start"><a href="#about-us" onclick="smoothScroll(event, 'about-us')">О нас</a></li>
+                                        <li class="ost"><a href="#catalog" onclick="smoothScroll(event, 'catalog')">Каталог</a></li>
+                                        <li class="ost"><a href="#service" onclick="smoothScroll(event, 'service')">Услуги</a></li>
+                                        <li class="ost"><a href="./basket.html">Корзина</a></li>
+                                        <li class="contact"><a href="#contact" class="cont" onclick="smoothScroll(event, 'contact1')">Связаться</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="hero-section">
+            <div class="container" >
+                <div class="booking-form">
+                    <ul>
+                        Какие двери у нас есть:
+                        <li>входные &mdash;</li>
+                        <li>межкомнатные &mdash;</li>
+                        <li>остекленные &mdash;</li>
+                        <li>глухие &mdash;</li>
+                        <li>со стеклопакетом &mdash;</li>
+                        <li>с пвх &mdash;</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="carousel" id="slider">
+                <div class="carousel-wrapper">
+                    <span id="target-item-1"></span>
+                    <span id="target-item-2"></span>
+                    <span id="target-item-3"></span>
+                    <span id="target-item-4"></span>
+                    <span id="target-item-5"></span>
+
+                    <div class="carousel-item item-1"></div>
+                    <div class="carousel-item item-2 light"></div>
+                    <div class="carousel-item item-3"></div>
+                    <div class="carousel-item item-4"></div>
+                    <div class="carousel-item item-5"></div>
+                </div>
+            </div>
+        </section>
+        <section class="about"  id="about-us">
+            <div class="ab-us">
+                <div class="line3"></div>
+                <div class="about_us">
+                    <div class="text0">О нас</div>
+                </div>
+                <div class="text1">
+                    <div class="text1-0">Добро пожаловать в DoorCraft!</div>
+                    <div class="text1-1">Мы производим стильные и качественные двери, которые создают уют и безопасность в вашем доме. У нас вы найдете широкий ассортимент дверей: от классических до современных, с индивидуальным подходом и возможностью дизайна на заказ.</div>
+                    <div class="text1-1"> Мы постоянно обновляемся и стремимся превзойти ваши ожидания. Ознакомьтесь с нашим каталогом и получите помощь на каждом этапе – от выбора до установки.</div>
+                    <div class="text1-1">С дверьми от <b>DoorCraft</b> каждый день станет удовольствием!</div>
+                </div>
+                <div class="img_about-us">
+                    <img src=".\img\about_us.png">
+                </div>
+            </div>
+        </section>
+        <section class="catalog1"  id="catalog">
+            <div class="entrance-doors">
+                <div class="text-entrance-doors">Входные двери в магазине DoorCraft</div>
+            </div>
+            <div class="to-interior">
+                <div class="to-interior-text"><a href="#interior" class="button" onclick="smoothScroll(event, 'interior')">К межкомнатным</a></div>
+            </div>
+            <div class="line-1">
+                <div class="line-1-group-1">
+                    <img src=".\img\entrance doors\1.png" >
+                    <div class="text2-0">Входная дверь “Герда”</div>
+                    <div class="text-yes">В наличии</div>
+                    <div class="text2-2">Тип двери:</div>
+                    <div class="frame1-1">
+                        <div class="text2-3">Без зеркала</div>
+                    </div>
+                    <div class="text2-4">
+                        <ul>
+                            <li>Покрытие: фрезерованная МДФ-панель</li>
+                            <li>Толщина: полотно 60 мм, коробка 90 мм</li>
+                            <li>Наполнитель: вспененный пенополистирол</li>
+                            <li>Уплотнитель: 2 контура</li>
+                            <li>Петли: наружные, 2 шт</li>
+                            <li>Замки: Border Professional</li>
+                            <li>Противосъемы: ригели, 3 шт</li>
+                        </ul>
+                    </div>
+                    <div class="frame2-1">
+                        <div class="text2-5">В корзину</div>
+                        <div id="text2-6">24 199 руб.</div>
+                    </div>
+                </div>
+                <div class="line-1-group-2">
+                    <img src=".\img\entrance doors\2.png">
+                    <div class="text2-0">Входная дверь “Nova Serebro”</div>
+                    <div class="text-no">Нет в наличии</div>
+                    <div class="text2-2">Тип двери:</div>
+                    <div class="frame1-1">
+                        <div class="text2-3">Без зеркала</div>
+                    </div>
+                    <div class="text2-4">
+                        <ul>
+                            <li>Покрытие: фрезерованная МДФ-панель</li>
+                            <li>Толщина: полотно 60 мм, коробка 90 мм</li>
+                            <li>Наполнитель: вспененный пенополистирол</li>
+                            <li>Уплотнитель: 2 контура</li>
+                            <li>Петли: наружные, 2 шт</li>
+                            <li>Замки: Border Professional</li>
+                            <li>Противосъемы: ригели, 3 шт</li>
+                        </ul>
+                    </div>
+                    <div class="frame2-1">
+                        <div class="text2-5">В корзину</div>
+                        <div id="text2-6">19 399 руб.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="line-2">
+                <div class="line-1-group-1">
+                    <img src=".\img\entrance doors\3.png">
+                    <div class="text2-0">Входная дверь “Люкс Горизонталь”</div>
+                    <div class="text-no">Нет в наличии</div>
+                    <div class="text2-2">Тип двери:</div>
+                    <div class="frame1-1">
+                        <div class="text2-3">С зеркалом</div>
+                    </div>
+                    <div class="text2-4">
+                        <ul>
+                            <li>Покрытие: фрезерованная МДФ-панель</li>
+                            <li>Толщина полотна: 115 мм; Наполнитель: ППС</li>
+                            <li>Уплотнитель: 3 контура</li>
+                            <li>Петли: наружные, 3 шт, открывание 180°</li>
+                            <li>Ручка: раздельная, цвет "черный"</li>
+                            <li>Замки: Kale, 4 класс взломостойкости</li>
+                            <li>Противосъемы: штыри, 3 шт</li>
+                        </ul>
+                    </div>
+                    <div class="frame2-1">
+                        <div class="text2-5">В корзину</div>
+                        <div id="text2-6">11 199 руб.</div>
+                    </div>
+                </div>
+                <div class="line-1-group-2">
+                    <img src=".\img\entrance doors\4.png">
+                    <div class="text2-0">Входная дверь “Люкс Куб”</div>
+                    <div class="text-yes">В наличии</div>
+                    <div class="text2-2">Тип двери:</div>
+                    <div class="frame1-1">
+                        <div class="text2-3">Без зеркала</div>
+                    </div>
+                    <div class="text2-4">
+                        <ul>
+                            <li>Покрытие: фрезерованная МДФ-панель</li>
+                            <li>Толщина полотна: 115 мм; Наполнитель: ППС</li>
+                            <li>Уплотнитель: 3 контура</li>
+                            <li>Петли: наружные, 3 шт, открывание 180°</li>
+                            <li>Ручка: раздельная, цвет "черный"</li>
+                            <li>Замки: Kale, 4 класс взломостойкости</li>
+                            <li>Противосъемы: штыри, 3 шт</li>
+                        </ul>
+                    </div>
+                    <div class="frame2-1">
+                        <div class="text2-5">В корзину</div>
+                        <div id="text2-6">20 499 руб.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="line-3">
+                <div class="line-1-group-1">
+                    <img src=".\img\entrance doors\5.png">
+                    <div class="text2-0">Входная дверь “Люкс Квадрат Нео”</div>
+                    <div class="text-yes">В наличии</div>
+                    <div class="text2-2">Тип двери:</div>
+                    <div class="frame1-1">
+                        <div class="text2-3">Без зеркала</div>
+                    </div>
+                    <div class="text2-4">
+                        <ul>
+                            <li>Покрытие: фрезерованная МДФ-панель</li>
+                            <li>Толщина полотна: 115 мм; Наполнитель: ППС</li>
+                            <li>Уплотнитель: 3 контура</li>
+                            <li>Петли: наружные, 3 шт, открывание 180°</li>
+                            <li>Ручка: раздельная, цвет "черный"</li>
+                            <li>Замки: Kale, 4 класс взломостойкости</li>
+                            <li>Противосъемы: штыри, 3 шт</li>
+                        </ul>
+                    </div>
+                    <div class="frame2-1">
+                        <div class="text2-5">В корзину</div>
+                        <div id="text2-6">14 799 руб.</div>
+                    </div>
+                </div>
+                <div class="line-1-group-2">
+                    <img src=".\img\entrance doors\6.png">
+                    <div class="text2-0">Входная дверь “Люкс Ромб Вертикаль”</div>
+                    <div class="text-yes">В наличии</div>
+                    <div class="text2-2">Тип двери:</div>
+                    <div class="frame1-1">
+                        <div class="text2-3">С зеркалом</div>
+                    </div>
+                    <div class="text2-4">
+                        <ul>
+                            <li>Покрытие: фрезерованная МДФ-панель</li>
+                            <li>Толщина полотна: 115 мм; Наполнитель: ППС</li>
+                            <li>Уплотнитель: 3 контура</li>
+                            <li>Петли: наружные, 3 шт, открывание 180°</li>
+                            <li>Ручка: раздельная, цвет "черный"</li>
+                            <li>Замки: Kale, 4 класс взломостойкости</li>
+                            <li>Противосъемы: штыри, 3 шт</li>
+                        </ul>
+                    </div>
+                    <div class="frame2-1">
+                        <div class="text2-5">В корзину</div>
+                        <div id="text2-6">15 999 руб.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="line-4">
+                <div class="line-1-group-1">
+                    <img src=".\img\entrance doors\7.png">
+                    <div class="text2-0">Входная дверь “Люкс Диагональ”</div>
+                    <div class="text-yes">В наличии</div>
+                    <div class="text2-2">Тип двери:</div>
+                    <div class="frame1-1">
+                        <div class="text2-3">С зеркалом</div>
+                    </div>
+                    <div class="text2-4">
+                        <ul>
+                            <li>Покрытие: фрезерованная МДФ-панель</li>
+                            <li>Толщина полотна: 115 мм; Наполнитель: ППС</li>
+                            <li>Уплотнитель: 3 контура</li>
+                            <li>Петли: наружные, 3 шт, открывание 180°</li>
+                            <li>Ручка: раздельная, цвет "черный"</li>
+                            <li>Замки: Kale, 4 класс взломостойкости</li>
+                            <li>Противосъемы: штыри, 3 шт</li>
+                        </ul>
+                    </div>
+                    <div class="frame2-1">
+                        <div class="text2-5">В корзину</div>
+                        <div id="text2-6">12 999 руб.</div>
+                    </div>
+                </div>
+                <div class="line-1-group-2">
+                    <img src=".\img\entrance doors\8.png">
+                    <div class="text2-0">Входная дверь “Люкс 3D”</div>
+                    <div class="text-no">Нет в наличии</div>
+                    <div class="text2-2">Тип двери:</div>
+                    <div class="frame1-1">
+                        <div class="text2-3">С зеркалом</div>
+                    </div>
+                    <div class="text2-4">
+                        <ul>
+                            <li>Покрытие: фрезерованная МДФ-панель</li>
+                            <li>Толщина полотна: 115 мм; Наполнитель: ППС</li>
+                            <li>Уплотнитель: 3 контура</li>
+                            <li>Петли: наружные, 3 шт, открывание 180°</li>
+                            <li>Ручка: раздельная, цвет "черный"</li>
+                            <li>Замки: Kale, 4 класс взломостойкости</li>
+                            <li>Противосъемы: штыри, 3 шт</li>
+                        </ul>
+                    </div>
+                    <div class="frame2-1">
+                        <div class="text2-5">В корзину</div>
+                        <div id="text2-6">15 999 руб.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="line-5">
+                <div class="line-1-group-1">
+                    <img src=".\img\entrance doors\9.png">
+                    <div class="text2-0">Входная дверь “Люкс Рейка”</div>
+                    <div class="text-no">Нет в наличии</div>
+                    <div class="text2-2">Тип двери:</div>
+                    <div class="frame1-1">
+                        <div class="text2-3">С зеркалом</div>
+                    </div>
+                    <div class="text2-4">
+                        <ul>
+                            <li>Покрытие: фрезерованная МДФ-панель</li>
+                            <li>Толщина полотна: 115 мм; Наполнитель: ППС</li>
+                            <li>Уплотнитель: 3 контура</li>
+                            <li>Петли: наружные, 3 шт, открывание 180°</li>
+                            <li>Ручка: раздельная, цвет "черный"</li>
+                            <li>Замки: Kale, 4 класс взломостойкости</li>
+                            <li>Противосъемы: штыри, 3 шт</li>
+                        </ul>
+                    </div>
+                    <div class="frame2-1">
+                        <div class="text2-5">В корзину</div>
+                        <div id="text2-6">18 199 руб.</div>
+                    </div>
+                </div>
+                <div class="line-1-group-2">
+                    <img src=".\img\entrance doors\10.png">
+                    <div class="text2-0">Входная дверь “Люкс Дуб Вертикаль”</div>
+                    <div class="text-yes">В наличии</div>
+                    <div class="text2-2">Тип двери:</div>
+                    <div class="frame1-1">
+                        <div class="text2-3">Без зеркала</div>
+                    </div>
+                    <div class="text2-4">
+                        <ul>
+                            <li>Покрытие: фрезерованная МДФ-панель</li>
+                            <li>Толщина полотна: 115 мм; Наполнитель: ППС</li>
+                            <li>Уплотнитель: 3 контура</li>
+                            <li>Петли: наружные, 3 шт, открывание 180°</li>
+                            <li>Ручка: раздельная, цвет "черный"</li>
+                            <li>Замки: Kale, 4 класс взломостойкости</li>
+                            <li>Противосъемы: штыри, 3 шт</li>
+                        </ul>
+                    </div>
+                    <div class="frame2-1">
+                        <div class="text2-5">В корзину</div>
+                        <div id="text2-6">13 999 руб.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="catalog2" id="interior">
+            <div class="interior-doors">
+                <div class="text-interior-doors">Входные двери в магазине DoorCraft</div>
+            </div>
+            <div class="to-entrance">
+                <div class="to-entrance-text"><a href="#catalog" class="button" onclick="smoothScroll(event, 'catalog')">К входным</a></div>
+            </div>
+            <div class="line-6">
+                <div class="line-1-group-1">
+                    <img src=".\img\interior doors\1.png">
+                    <div class="text2-0">Межкомнатная дверь «L-1-DS»</div>
+                    <div class="text-yes">В наличии</div>
+                    <div class="text2-2">Цвета:</div>
+                    <div class="frame1-2">
+                        <div class="color1"></div>
+                        <div class="color2"></div>
+                        <div class="color3"></div>
+                        <div class="color4"></div>
+                        <div class="color5"></div>
+                        <div class="color6"></div>
+                    </div>
+                    <div class="text2-4">
+                        <ul>
+                            <li>Размер: 600, 700, 800, 900 мм</li>
+                            <li>Материал: МДФ+Дерево</li>
+                            <li>Упаковка: гофрокартон, пленка</li>
+                            <li>Толщина: 36 мм; Вес: 23 кг</li>
+                        </ul>
+                    </div>
+                    <div class="frame2-1">
+                        <div class="text2-5">В корзину</div>
+                        <div id="text2-6">15 499 руб.</div>
+                    </div>
+                </div>
+                <div class="line-1-group-2">
+                    <img src=".\img\interior doors\2.png">
+                    <div class="text2-0">Межкомнатная дверь «L-7»</div>
+                    <div class="text-no">Нет в наличии</div>
+                    <div class="text2-2">Цвета:</div>
+                    <div class="frame1-2">
+                        <div class="color1"></div>
+                        <div class="color2"></div>
+                        <div class="color3"></div>
+                        <div class="color4"></div>
+                        <div class="color5"></div>
+                        <div class="color6"></div>
+                    </div>
+                    <div class="text2-4">
+                        <ul>
+                            <li>Размер: 600, 700, 800, 900 мм</li>
+                            <li>Материал: МДФ+Дерево</li>
+                            <li>Упаковка: гофрокартон, пленка</li>
+                            <li>Толщина: 36 мм; Вес: 23 кг</li>
+                        </ul>
+                    </div>
+                    <div class="frame2-1">
+                        <div class="text2-5">В корзину</div>
+                        <div id="text2-6">16 899 руб.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="line-7">
+                <div class="line-1-group-1">
+                    <img src=".\img\interior doors\3.png">
+                    <div class="text2-0">Межкомнатная дверь «L-8-2»</div>
+                    <div class="text-no">Нет в наличии</div>
+                    <div class="text2-2">Цвета:</div>
+                    <div class="frame1-2">
+                        <div class="color7"></div>
+                        <div class="color2"></div>
+                        <div class="color3"></div>
+                        <div class="color4"></div>
+                        <div class="color5"></div>
+                        <div class="color6"></div>
+                    </div>
+                    <div class="text2-4">
+                        <ul>
+                            <li>Размер: 600, 700, 800, 900 мм</li>
+                            <li>Материал: МДФ+Дерево</li>
+                            <li>Упаковка: гофрокартон, пленка</li>
+                            <li>Толщина: 36 мм; Вес: 23 кг</li>
+                        </ul>
+                    </div>
+                    <div class="frame2-1">
+                        <div class="text2-5">В корзину</div>
+                        <div id="text2-6">25 499 руб.</div>
+                    </div>
+                </div>
+                <div class="line-1-group-2">
+                    <img src=".\img\interior doors\4.png">
+                    <div class="text2-0">Межкомнатная дверь «K-1»</div>
+                    <div class="text-no">Нет в наличии</div>
+                    <div class="text2-21">Цвета:</div>
+                    <div class="frame1-3">
+                        <div class="color1"></div>
+                        <div class="color2"></div>
+                        <div class="color3"></div>
+                        <div class="color4"></div>
+                        <div class="color5"></div>
+                        <div class="color6"></div>
+                    </div>
+                    <div class="polotno">
+                        <div class="polotno-text">Вид полотна:</div>
+                        <div class="polotno-1-no">
+                            <div class="polotno-text-1">Глухая</div>
+                        </div>
+                        <div class="polotno-2-yes">
+                            <div class="polotno-text-2">Остекленная</div>
+                        </div>
+                    </div>
+                    <div class="text2-4">
+                        <ul>
+                            <li>Размер: 600, 700, 800, 900 мм</li>
+                            <li>Материал: МДФ+Дерево</li>
+                            <li>Упаковка: гофрокартон, пленка</li>
+                        </ul>
+                    </div>
+                    <div class="frame2-1">
+                        <div class="text2-5">В корзину</div>
+                        <div id="text2-6">29 199 руб.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="line-8">
+                <div class="line-1-group-1">
+                    <img src=".\img\interior doors\5.png">
+                    <div class="text2-0">Межкомнатная дверь «K-2»</div>
+                    <div class="text-yes">В наличии</div>
+                    <div class="text2-21">Цвета:</div>
+                    <div class="frame1-3">
+                        <div class="color1"></div>
+                        <div class="color2"></div>
+                        <div class="color3"></div>
+                        <div class="color4"></div>
+                        <div class="color5"></div>
+                        <div class="color6"></div>
+                    </div>
+                    <div class="polotno">
+                        <div class="polotno-text">Вид полотна:</div>
+                        <div class="polotno-1-yes">
+                            <div class="polotno-text-1">Глухая</div>
+                        </div>
+                        <div class="polotno-2-no">
+                            <div class="polotno-text-2">Остекленная</div>
+                        </div>
+                    </div>
+                    <div class="text2-4">
+                        <ul>
+                            <li>Размер: 600, 700, 800, 900 мм</li>
+                            <li>Материал: МДФ+Дерево</li>
+                            <li>Упаковка: гофрокартон, пленка</li>
+                        </ul>
+                    </div>
+                    <div class="frame2-1">
+                        <div class="text2-5">В корзину</div>
+                        <div id="text2-6">12 699 руб.</div>
+                    </div>
+                </div>
+                <div class="line-1-group-2">
+                    <img src=".\img\interior doors\6.png">
+                    <div class="text2-0">Межкомнатная дверь «Прага»</div>
+                    <div class="text-yes">В наличии</div>
+                    <div class="text2-21">Цвета:</div>
+                    <div class="frame1-3">
+                        <div class="color1"></div>
+                        <div class="color2"></div>
+                        <div class="color3"></div>
+                        <div class="color4"></div>
+                    </div>
+                    <div class="polotno">
+                        <div class="polotno-text">Вид полотна:</div>
+                        <div class="polotno-1-yes">
+                            <div class="polotno-text-3">Остекленная</div>
+                        </div>
+                    </div>
+                    <div class="text2-4">
+                        <ul>
+                            <li>Размер: 600, 700, 800, 900 мм</li>
+                            <li>Материал: МДФ+Дерево</li>
+                            <li>Покрытие: винил</li>
+                            <li>Упаковка: гофрокартон, пленка</li>
+                        </ul>
+                    </div>
+                    <div class="frame2-1">
+                        <div class="text2-5">В корзину</div>
+                        <div id="text2-6">17 199 руб.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="line-9">
+                <div class="line-1-group-1">
+                    <img src=".\img\interior doors\7.png">
+                    <div class="text2-0">Межкомнатная дверь «Вена»</div>
+                    <div class="text-no">Нет в наличии</div>
+                    <div class="text2-21">Цвета:</div>
+                    <div class="frame1-3">
+                        <div class="color1"></div>
+                        <div class="color2"></div>
+                        <div class="color3"></div>
+                        <div class="color4"></div>
+                    </div>
+                    <div class="polotno">
+                        <div class="polotno-text">Вид полотна:</div>
+                        <div class="polotno-1-yes">
+                            <div class="polotno-text-3">Остекленная</div>
+                        </div>
+                    </div>
+                    <div class="text2-4">
+                        <ul>
+                            <li>Размер: 600, 700, 800, 900 мм</li>
+                            <li>Материал: МДФ+Дерево</li>
+                            <li>Упаковка: гофрокартон, пленка</li>
+                        </ul>
+                    </div>
+                    <div class="frame2-1">
+                        <div class="text2-5">В корзину</div>
+                        <div id="text2-6">13 599 руб.</div>
+                    </div>
+                </div>
+                <div class="line-1-group-2">
+                    <img src=".\img\interior doors\8.png" >
+                    <div class="text2-0">Межкомнатная дверь «SM-11»</div>
+                    <div class="text-yes">В наличии</div>
+                    <div class="text2-21">Цвета:</div>
+                    <div class="frame1-3">
+                        <div class="color8"></div>
+                    </div>
+                    <div class="glass-color">
+                        <div class="glass-color-text">Цвет стекла:</div>
+                        <div class="glass-color-1"></div>
+                    </div>
+                    <div class="text2-4">
+                        <ul>
+                            <li>Размер: 600, 700, 800, 900 мм</li>
+                            <li>Материал: МДФ+Дерево</li>
+                            <li>Упаковка: гофрокартон, пленка</li>
+                            <li>Толщина: 36 мм; Вес: 23 кг</li>
+                        </ul>
+                    </div>
+                    <div class="frame2-1">
+                        <div class="text2-5">В корзину</div>
+                        <div id="text2-6">16 399 руб.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="line-10">
+                <div class="line-1-group-1">
+                    <img src=".\img\interior doors\9.png">
+                    <div class="text2-0">Межкомнатная дверь «SM-14»</div>
+                    <div class="text-yes">В наличии</div>
+                    <div class="text2-21">Цвета:</div>
+                    <div class="frame1-3">
+                        <div class="color8"></div>
+                    </div>
+                    <div class="glass-color">
+                        <div class="glass-color-text">Цвет стекла:</div>
+                        <div class="glass-color-1"></div>
+                    </div>
+                    <div class="text2-4">
+                        <ul>
+                            <li>Размер: 600, 700, 800, 900 мм</li>
+                            <li>Материал: МДФ+Дерево</li>
+                            <li>Упаковка: гофрокартон, пленка</li>
+                            <li>Толщина: 36 мм; Вес: 23 кг</li>
+                        </ul>
+                    </div>
+                    <div class="frame2-1">
+                        <div class="text2-5">В корзину</div>
+                        <div id="text2-6">15 999 руб.</div>
+                    </div>
+                </div>
+                <div class="line-1-group-2">
+                    <img src=".\img\interior doors\10.png">
+                    <div class="text2-0">Межкомнатная дверь «L-1-5»</div>
+                    <div class="text-no">Нет в наличии</div>
+                    <div class="text2-2">Цвета:</div>
+                    <div class="frame1-31">
+                        <div class="color1"></div>
+                        <div class="color2"></div>
+                        <div class="color3"></div>
+                        <div class="color4"></div>
+                        <div class="color5"></div>
+                        <div class="color6"></div>
+                        <div class="color9"></div>
+                        <div class="color10"></div>
+                    </div>
+                    <div class="text2-4">
+                        <ul>
+                            <li>Размер: 600, 700, 800, 900 мм</li>
+                            <li>Материал: МДФ+Дерево</li>
+                            <li>Упаковка: гофрокартон, пленка</li>
+                            <li>Толщина: 36 мм; Вес: 23 кг</li>
+                        </ul>
+                    </div>
+                    <div class="frame2-1">
+                        <div class="text2-5">В корзину</div>
+                        <div id="text2-6">12 999 руб.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service" id="service">
+            <div class="vector">
+                <img src=".\img\bg_service.png" class="bg">
+                <img src=".\img\phone_service.png" class="phone"> 
+                <img src=".\img\truck_service.png" class="truck">
+                <div class="text">
+                    <div class="text-left">
+                        <ul>
+                            <li class="big-text">Закажите доставку у нас!</li>
+                            <li class="small-text">При заказе от 2 дверей <span class="free">&nbsp  доставка бесплатная</span></li>
+                            <li class="regular-text l1">Также мы производим двери на заказ!</li>
+                            <li class="regular-text l2">Проконсультируем Вас по выбору двери</li>
+                            <li class="regular-text l3">Бесплатно сделаем все замеры!</li>
+                        </ul>
+                    </div>
+                    <div class="text-right">
+                        <ul>
+                            <li class="regular-text-1 l11">Заменим старые двери</li>
+                            <li class="regular-text-1 l12">Отремонтируем и восстановим поврежденные двери</li>
+                            <li class="regular-text-1 l13">Окажем помощь в выборе и установке ручек, замков и других элементов</li>
+                            <li class="bigger-text">!Предоставляем гарантию 36 месяцев!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact1"  id="contact1">
+            <div class="bg-contact">
+                <div class="line_1">
+                    <img src="./img/logo1.png" alt="">
+                    <p >© 2024 Все права защищены</p>
+                </div>
+                <div class="line_2">
+                    <p class = "foot_l1">+8 (888) 888-88-88</p>
+                    <p class = "foot_l2">Ростов-на-Дону, Ул. Мильчакова, 10</p>
+                    <div class="telegram">
+                        <img src=".\img\telegram.png" alt="">
+                        <p class="telega">Написать в Telegram</p>
+                    </div>
+                </div>
+                <div class="line_3">
+                    <div class="social">
+                        <p class="social-text" align="center">Магазин DoorCraft в соцсетях:</p>
+                        <div class="Vk">
+                            <div class="vk"><img src=".\img\telegram.png" alt="" >
+                                <p class="vk-text">VKontakte</p>
+                            </div>
+                        </div>
+                        <div class="TT">
+                            <div class="tt">
+                                <img src=".\img\telegram.png" alt="">
+                            <p class="tt-text">TikTok</p>
+                            </div>
+                        </div>
+                        <div class="YT">
+                            <div class="yt">
+                                <img src=".\img\telegram.png" alt="">
+                            <p class="yt-text">YouTube</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="info">
+                    <p class="info-text">Информация представленная на страницах сайта не является публичной офертой. Ассортимент товара в магазине может отличаться от ассортимента товара на сайте. Представленные на сайте цвета могут отличатся от действительных, из-за специфики передачи цветов различными мониторами и устройствами. Подробности об организаторе акции, о правилах ее проведения, размере скидок по результатам такой акции, сроках, месте и порядке их получения уточняйте у менеджера в офисе продаж или по телефону указанному на сайте.  *Рассрочка - это кредит предоставляемый банками ООО "Русфинанс Банк", АО "Банк Русский Стандарт", КБ "Ренессанс Кредит" (ООО) с возможным увеличением платежа в связи с оформлением дополнительных услуг страхования, смс оповещения.</p>
+                </div>
+                </div>
+            </div>
+        </section>
+        <div class="bg-1"></div>
+    </body>
+</html>
